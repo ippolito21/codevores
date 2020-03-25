@@ -1,0 +1,127 @@
+
+.image-matrix{
+  display: block;
+  height: 300px;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header{
+  width:100%;
+  background-color: #333333;
+  font-size: 15px;
+  color:white;
+  text-align:center;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+
+.menu ul{/* margin-top =0 pour coller le menu vers l'image*/
+  background-color: #333333;/*couleur gris foné*/
+  margin-top: 0;
+  padding: 0;
+}
+
+.menu li{/*pour mettre le menu en horizontal*/
+  display: inline-block;
+  width: 100px;
+  height:20px;
+  margin:0px;
+  padding:0px;
+  list-style-type: none;
+  border-right:1px solid #CCCCCC;
+  text-align: center;
+  line-height: 20px;
+}
+
+.menu li a{/*suite du code mettre le menu en horizontal*/
+  display: block;
+  text-decoration: none;/*enleve le soulignement*/
+  color:#FFFFFF;/*couleur blanc*/
+}
+
+.menu li: hover{/*changer la couleur des pages en pointant la souris*/
+  backgroud-color:#3388BB;
+}
+
+/* bloc au milieu de la page*/
+.page {
+  height: 400px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px; /*reevoir les marges interieur*/
+  margin: 0px ; /*revoir les marges*/
+}
+
+.p{
+  text-align: center;
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  color: white;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+/*  -webkit-box-sizing: border-box;*/
+  /*-moz-box-sizing: border-box;*/
+  padding: 0px 20px 20px 20px;
+}
+
+.footer .col ul { /* .col pour mettre les puces et les mettre aux milieux si enlever va à gauche*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer  ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+}
+
+
+
+.footer .col ul li:hover {/*.col ul li pour ponter avec la souris sur le footer*/
+  color: #ffffff;
+}
+
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+
+
+/*formulaire de contact*/
+form {
+  display:flex;
+
+}
+
+form > div {
+width: 50%;
+}
+div > p {
+  display: flex;
+}
+form > div + div {
+  margin-left: 1em;
+}
+
+form input: not([type=submit]) {
+  flex:1;
+}
