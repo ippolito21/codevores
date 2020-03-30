@@ -108,22 +108,103 @@ footer a:hover{
   color: #e74c3c;
   }/*modification de la couleur au survolsur les icone mais ne fonctionne pas/*
 
-/*formulaire de contact*/
-form {
-  display:flex;
+/*formulaire de contact* ne foctionne pas le css/
 
-}
-
-form > div {
-width: 50%;
-}
-div > p {
+/* Style du form - display items horizontally */
+/*.text-center border border-light p-5{
   display: flex;
-}
-form > div + div {
-  margin-left: 1em;
+  flex-flow: row wrap;
+  align-items: center;
+}*/
+
+/* ajouter des marges pour chaque  label */
+/*.form label {
+  margin: 5px 10px 5px 0;
+}*/
+
+/* Style the input fields */
+
+/*.custom-control custom-checkbox mb-4{
+  margin: 5px 10px 5px 0;
+  padding :10Px;
+  background-color: #fff;
+  border-radius: 1px solid #ddd;
+}*/
+/* Style du boutton envoi*/
+/*.btn btn-info btn-block{
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
 }
 
-form input: not([type=submit]) {
-  flex:1;
+/*.btn btn-info btn-block:hover {
+  background-color: royalblue;
+}
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+/*@media (max-width: 500px) {
+  .form input {
+    margin: 10px 0;
+  }*/
+
+  /*.text-center border border-light p-5{*/
+  /*  flex-direction: column;
+    align-items: stretch;
+  }
+}*/
+
+
+
+/*formulaire*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 500px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+/*création de blocs*/
+.section{
+  width: 50%; /*largeur des p*/
+  min-width:500px;
+  border: 1px solid black;
+  text-align: justify;
+  padding: 12px; /*marges intérieure de 12px*/
+  margin: 60px;/* 50px;mes paragraphes soient plus espacés entre eux*/
 }
