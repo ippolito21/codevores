@@ -12,99 +12,129 @@
   font-size: 15px;
   color:white;
   text-align:center;
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;*/
   margin-top: 0;
 }
-
-
-.menu ul{/* margin-top =0 pour coller le menu vers l'image*/
-  background-color: #333333;/*couleur gris foné*/
-  margin-top: auto;
-  padding: 0;
-}
-
-.menu li{/*pour mettre le menu en horizontal*/
-  display: inline-block;/*mets le menu et les boutons à l'horizontal*/
-  width: 10%;/*100% width,mets tout les éléments le long de la page*9 bt du menu soit 100:9=12%/
-  height:20px;/*hauteur, taille du bandeau*/
-  margin:0px;
-  padding:0px;
-  list-style-type: none;
-  text-align: center;
-
-}
-
-.menu li a{/*suite du code mettre le menu en horizontal*/
-  display: block;
-  text-decoration: none;/*enleve le soulignement*/
-  color:#FFFFFF;/*couleur blanc*/
-}
-
-.menu li : hover{/*changer la couleur du menu en pointant la souris ne fonctionnent pas*/
-  backgroud-color:#3388BB;
-
-}
-
-/* bloc au milieu de la page*/
-.page {
-  height: 400px;
-  width: 100%;
-  background-color: #f0f0f0;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 0px; /*revoir les marges interieur*/
-  margin: 0px ; /*revoir les marges*/
-  display: inline;
+/*titre collé au menu*/
+h1
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
-.page{
-  font-size: 20px;
-  font-family: sans-serif;
-}
-/* STYLES SPECIFIC TO FOOTER  */
-.footer {
-  width: 100%;
-  position: relative;
-  color: white;
-  height: 200px;
-  background-color: #070617;
-}
-.footer .col {
-  width: 200px;
-  height: auto;
-  float: left;
-  box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
-}
-
-.footer .col ul { /* .col pour mettre les puces et les mettre aux milieux si enlever va à gauche*/
+/*menu*/
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-.footer  ul li {
-  color: #999999;
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 5px 0px 5px 0px;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
+  overflow: hidden;
+  background-color: #333;
 }
 
-/*.footer .col ul li:hover {/*.col ul li pour ponter avec la souris sur le footer*/
-/*  color: #ffffff;
-}*/
+li {
+  float:left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+ background-color: #111;
+}
+
+.h2{
+  text-align: center;
+  width:100%;
+}
+
+
+.choix{
+  text-align: center;
+}
+   /* revoir les marges padding et margin*/
+
+
+
+
+
+
+
+/* STYLES SPECIFIC TO FOOTER  */
+
+
 .social{
 color:#e74c3c;
 display: inline;/* mettre les icones en lignes horizontal soit inline-block*/
 justify-content: space-around;
-font-size: 14px;
 padding: 20Px;
 }
+
+body{
+  margin: 0.
+}
+
+footer{
+  width:100%;
+  height: auto; /* la taille du footer :2.5rem;*/
+  color: white;
+}
+
 footer a:hover{
+  color: #e74c3c; /*change de colore des icones(hover) en pointant la souris*/
+}
+
+footer a{
+  color:white;
+  font-size: 19px; /*taille de la police de caractères*/
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+/*.page{
+  flex: 1 0 auto;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 19px;
+}*/
+
+
+.footer{
+  flex-shrink: 0;
+  height: 170px;
+}
+
+footer{
+display: flex;
+justify-content: flex-start;/*contenu centrer dns le footer*/
+}
+
+/*.container{
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  height : 170px;
+}*/
+
+.mail, .adresse, .start{
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+/*footer a:hover{
   color: #e74c3c;
   }/*modification de la couleur au survolsur les icone mais ne fonctionne pas/*
 
@@ -198,13 +228,32 @@ body {font-family: Arial, Helvetica, sans-serif;}
       flex-direction: column;
       align-items: stretch;
     }
-  }
-/*création de blocs*/
-.section{
-  width: 50%; /*largeur des p*/
-  min-width:500px;
+
+
+/*création de blocs* les blocs ne fonctionnent pas ?*/
+.section {
+/*nom de la balise pour contenir le bloc, conteneur*/
+  width: 350px; /* laisser 350 sinon la boderure part(4 blocs 100:4= 25px en lageur)*/
+  font-size: 19px;
+  font-family: inherit, sans-serif, Arial;
+  margin: 50px;/*marges à extérieure de 50px pour l'espacement*/
   border: 1px solid black;
   text-align: justify;
-  padding: 12px; /*marges intérieure de 12px*/
-  margin: 60px;/* 50px;mes paragraphes soient plus espacés entre eux*/
+  padding: 12px; /*marge intérieur de 12px*/
+}
+
+.info{ /*la photo a bougé*/
+  position: absolute;
+  right:0px;
+  botton: 0px;
+}
+.plus
+{
+margin-left: 170px;
+border:1px solid blue;
+
+/*pied page*/
+/*footer{
+footer a{/*coloration des icones,elles ne s'affichent pas*/
+  /*color: green;
 }
