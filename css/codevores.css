@@ -48,7 +48,7 @@ li a{
 li a:hover {
  background-color: #111;
 }
-
+/*fin du menu navigation*/
 .h2{
   text-align: center;
   width:100%;
@@ -60,24 +60,105 @@ li a:hover {
 }
    /* revoir les marges padding et margin*/
 
+/*debut du contenaire, bloc : espace prof*/
+   html, body{
+     height: 100%;
+   }
+
+   body{
+     display: flex;
+     flex-direction: column;
+     }
 
 
+   body{
+     margin: 0.
+   }
+/*debut du contenaire, bloc : espace prof */
+#affichage{
+  width:600px;
+  padding: 20px; /*Ajuster le texte*/
+  border: 2px solid #000;
+  border-radius: 20px;
 
+}
+#photo-visage{/*image a place à droite du text ne fonctionne pas la photo a ratrecie*/
+  float: left;
+  margin-right: 10px;
+  border:2px solid #000;
+  width:600px;
+  height:100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+/*style du text le faire monter en haut de l'image*/
+#special p{
+  text-align: center;
+  display: block;
+  margin-top: 0px;
+  padding: 10px;
+  height: 100%;
+  font-family: Times New roman, Times serif; Arial, Helvetica;
+}
+img.top {
+  vertical-align: top;
+}
+/*text des bocs d'images centrer */
+div.container{
+  text-align: center;
+}
+/*mettre en ligne les blocs d'images (galeries) en ligne horizontal */
+div.web{
+  display: flex;
+  margin-bottom: 10px;
+}
+/*marges des blocs des texts des images*/
+div.web > div {
+/*margin: 5px;*/
+  padding: 5px;
+}
+/*fin du bloc container page prof*/
 
+/*bannière en entête image de fond, 1èreimage*/
+#mission{
+  max-width: 100%;
+  height: 400px;
+  background-image: url('images/femme-travail2.jpg');
+  background-size: 400%  400%;
+}
+/*fin de la bannière*/
+.container{
+float: left;
+margin-right: 10px;
+border:2px solid #000;
+width:600px;
+height:100%;
+padding: 10px;
+border-radius: 20px;
+}
 
+/*debut info + bouton de carte de visite*/
+#contenu a{/*contnu doit être sur la carte de vsite mais ne s'affiche pas*/
+  color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: nome;
+  background-color: rgba(178, 32, 19, 0.8);
+}
+
+#contenu a:hover{/*coloration du bouton lorsque la souris passe dessus*/
+  color: green;
+}
+
+/*fin de la carte de visite*/
 
 /* STYLES SPECIFIC TO FOOTER  */
-
-
 .social{
 color:#e74c3c;
 display: inline;/* mettre les icones en lignes horizontal soit inline-block*/
-justify-content: space-around;
-padding: 20Px;
-}
-
-body{
-  margin: 0.
+justify-content: center;
+padding: 20px;/* écart les element et 0 les resser*/
 }
 
 footer{
@@ -87,30 +168,14 @@ footer{
 }
 
 footer a:hover{
-  color: #e74c3c; /*change de colore des icones(hover) en pointant la souris*/
+  color: #e74c3c; /*modification de la couleur des icones au survol de la souris en  pointant(hover)*/
 }
+
 
 footer a{
   color:white;
   font-size: 19px; /*taille de la police de caractères*/
 }
-
-html, body{
-  height: 100%;
-}
-
-body{
-  display: flex;
-  flex-direction: column;
-}
-
-/*.page{
-  flex: 1 0 auto;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  font-size: 19px;
-}*/
-
 
 .footer{
   flex-shrink: 0;
@@ -119,26 +184,33 @@ body{
 
 footer{
 display: flex;
-justify-content: flex-start;/*contenu centrer dns le footer*/
+text-align: center;/*pour center les elements dans le footer*/
+bottom-top: 0;
 }
-
-/*.container{
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  height : 170px;
-}*/
 
 .mail, .adresse, .start{
   font-size: 15px;
   color: white;
   margin: 0;
 }
-/*footer a:hover{
-  color: #e74c3c;
-  }/*modification de la couleur au survolsur les icone mais ne fonctionne pas/*
+/*fin du footer*/
 
-/*formulaire de contact* ne foctionne pas le css/
+/*style de l'image espace prof*/
+.rounded-circle{/*classe des images de boostrap*/
+  float: left;
+}
+
+
+  /*background-color: #2196F3; font-size: 19px;
+  padding: 10px; background-color: rgba(255, 255, 255, 0.8);*/
+
+/*header de la page pro*/
+
+
+
+
+
+/*formulaire de contact* ne fonctionne pas (css) /
 
 /* Style du form - display items horizontally */
 /*.text-center border border-light p-5{
@@ -223,12 +295,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin: 10px 0;
   }
 
-
     .form-inline {
       flex-direction: column;
       align-items: stretch;
     }
-
+/*fin du formulaire*/
 
 /*création de blocs* les blocs ne fonctionnent pas ?*/
 .section {
@@ -251,9 +322,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
 {
 margin-left: 170px;
 border:1px solid blue;
-
-/*pied page*/
-/*footer{
-footer a{/*coloration des icones,elles ne s'affichent pas*/
-  /*color: green;
-}
