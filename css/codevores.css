@@ -5,7 +5,179 @@
   margin: 0;
   overflow: hidden;
 }
+.image-communauty{
+  display: block;
+  max-width:100%;
+  height:900px;
+  margin: 0;
+  opacity: 0.3;
+}
 
+/*Menu icône navigation (hamburger-menu)*/
+/*#caractères{
+  width: 35px;
+  height:5px;
+  background-color: white;
+  margin: 6px 0;
+}
+#caractères{
+  display: block;
+  cursor: pointer;
+}*/
+.navbar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.navbar a {
+  padding:8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.navbar a:hover{
+  color:#f1f1f1;
+}
+.navbar .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size:36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px){
+.navbar {padding-top: 15px;}
+.navbar a {font-size:18px;}
+}
+/*fin du menu icône menu hamburger*/
+/*style de l'image communauté */
+.frise{
+  display: inline-block;
+  font-size: 19px;
+  height:300px;
+  max-width: 100%;
+  margin-bottom: 2%;/*margin botton et top décaler les marges du haut et du bas*/
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/*fin du style image communauté*/
+.image-press{
+  display: block;
+  height: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*boite, bloc de fond transparent*/
+div.background{/*voir si ça marche*/
+  background:url("images/wordpress1.jpg")
+  repeat;
+  border:2px solid black;
+}
+div.transbox{
+  margin: 30px;
+  background-color:#ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+div.transbox p{
+  margin: 5%;
+  font-weight: bold;
+  font-size: 22px;
+  color:#000000;
+}
+/*fin de la boite, bloc*/
+
+.image-femme{
+  background-image: url('images/femme-recruteur1.jpg');
+  background-repeat: no-repeat;
+  max-width:100%;
+  height: 1000px;
+  background-size:cover/*voir si je l'enlève*/
+
+}
+.image-tournesol{
+  height: 100px;
+}
+/*tableau*/
+  caption{
+  text-align: center;
+  font-size: 25px;
+  margin-top:2%;
+  margin-bottom:3%;
+  }
+  /*width 100% pour éviter que le tableau soit trop grand(table-lyout: fixed pour qu'il soit figé avec les mesures donées dans th, td et table)*/
+  table{
+    margin-top :3%;
+    table-layout: fixed;
+    width:100%;
+  }
+  /*largeur des cellules du tableau*/
+  th, td{
+    width: 33%;
+    text-align: center;
+  }
+  /*fin du tableau*/
+/*mettre le text sur l'image */
+.debut{
+  display:inline-block;
+  position: relative;
+
+}
+.debut .text{
+  position: absolute;
+  text-align:center;
+  font-family: georgia;
+  font-size: 19px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgb(0, 0, 0,);
+  color: black;
+  margin-top: 3%;
+}
+/*text sur une image*/
+.debut .content{
+  position: absolute;
+  bottom:0;
+  background: rgb(0, 0, 0,);
+  background: rgb(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.debut img{ vertical-align:middle;}
+/*fin text sur image*/
+
+/*image dans un texte de block*/
+.chant{
+  position: relative;
+  font-family:Arial serif;
+  font-size: 30px;
+}
+.text-block{
+  position:absolute;
+  bottom: 50px;
+  /*right: 50px; mettre une image à droite*/
+  /*left: 50px;*/
+  background-color: pink;
+  color: black;
+  width: 100%;/*image tout au long de la page*/
+  padding-left: 19px;
+  padding-right: 19px;
+}
+/*fin image du texte block*/
 .header{
   width:100%;
   background-color: #333333;
@@ -61,38 +233,68 @@ li a:hover {
    /* revoir les marges padding et margin*/
 
 /*debut du contenaire, bloc : espace prof*/
-   html, body{
+   html, body {
      height: 100%;
    }
 
    body{
+     font-family: Arial, Helvetica, sans-serif;
      display: flex;
      flex-direction: column;
+     background-color: white;
+     margin: 0;
      }
-
-
-   body{
-     margin: 0.
-   }
-/*debut du contenaire, bloc : espace prof */
-#affichage{
-  width:600px;
-  padding: 20px; /*Ajuster le texte*/
-  border: 2px solid #000;
-  border-radius: 20px;
+.description_codevore {
+  color: white;
+  background-color: #333;
+  margin-bottom:15px;
+}
+/* debut de la page connexion*/
+#bouton_valider{
+  text-align:right;
+}
+#logo_formulaire{
+  text-align: center;
+}
+/*cibler le formulaire*/
+form{
 
 }
-#photo-visage{/*image a place à droite du text ne fonctionne pas la photo a ratrecie*/
-  float: left;
+/*fin de la page connexion*/
+
+/*debut du contenaire, bloc : espace prof */
+.affichage {
+  width: 48%;/*retiré pour un affichage en longueur*/
+  padding: 10px;
+  /*Ajuster le texte*/
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+
+.game{/*encardrement pour la descrption, placer à coté de la carte de visite ne fonctionne pas*/
+margin-right: 10px;
+border:2px solid #000;
+width:48%;/* enlever:600px*/
+height:500px;
+padding: 10px;
+border-radius: 20px;
+text-align: center;
+display:inline-block;/*on peut utiliser block aussi; le texte ne dépasse plus du cadre du bloc*/
+float: right;/*rajouter bloc à droite ne fonctionne pas*/
+}
+
+/*#photo-visage {/* enlver la class,image a place à droite du text ne fonctionne pas la photo a ratrecie*/
+/*  float: left;
   margin-right: 10px;
   border:2px solid #000;
   width:600px;
   height:100%;
   padding: 10px;
-  border-radius: 20px;
-}
+  border-radius: 20px;*/
+/*}*/
 /*style du text le faire monter en haut de l'image*/
-#special p{
+#special p {
   text-align: center;
   display: block;
   margin-top: 0px;
@@ -100,45 +302,75 @@ li a:hover {
   height: 100%;
   font-family: Times New roman, Times serif; Arial, Helvetica;
 }
-img.top {
-  vertical-align: top;
-}
-/*text des bocs d'images centrer */
-div.container{
-  text-align: center;
-}
+
+/*img .top= tous les elements top contenu dans une balise img*/
+/*img.top= tous les elements avec img et top comme nom de class*/
 /*mettre en ligne les blocs d'images (galeries) en ligne horizontal */
-div.web{
+/*.web {
   display: flex;
   margin-bottom: 10px;
-}
+}*/
 /*marges des blocs des texts des images*/
-div.web > div {
-/*margin: 5px;*/
+/*.web > div{
+  margin: 5px;
+  padding: 5px;/
+}*/
+/*.fan a enlever{
+  display: inline-block;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  margin-right:1%;
+}
+
+.tran a enlever{
+  width: 30%;
+  height: 100px;
+}*/
+/*flottement d'images, trois contenaires d'images;100/3=33,33%; deux images(100/2=50%) et 4 images(100/4=25%)*/
+*{
+  box-sizing: border-box;
+}
+.column{
+  float: left;/*propriété float images cote à cote*/
+  width: 33.33%;
   padding: 5px;
 }
+.row {
+  display: flex;
+}
+/*fin des galeries d'images*/
 /*fin du bloc container page prof*/
+/*style les deux images en entêtes*/
+.travail,
+.working {
+  width:50%;/*deux images 100/2=50*/
+  height:auto;
+  margin:0;
+  padding:0;
+}
 
-/*bannière en entête image de fond, 1èreimage*/
-#mission{
-  max-width: 100%;
-  height: 400px;
-  background-image: url('images/femme-travail2.jpg');
-  background-size: 400%  400%;
+
+/*bannière en entête image de fond, 1ère image a l'horizontal*/
+#mission {
+  width: 100%;
+  display:flex;
+
 }
 /*fin de la bannière*/
-.container{
+.container {
 float: left;
 margin-right: 10px;
 border:2px solid #000;
-width:600px;
-height:100%;
+width:48%;/*600px*/
+height:500px;
 padding: 10px;
 border-radius: 20px;
+text-align: center;
 }
 
 /*debut info + bouton de carte de visite*/
-#contenu a{/*contnu doit être sur la carte de vsite mais ne s'affiche pas*/
+.contact_button{
   color: white;
   border: 1px solid red;
   border-radius: 10px;
@@ -146,11 +378,21 @@ border-radius: 20px;
   text-decoration: nome;
   background-color: rgba(178, 32, 19, 0.8);
 }
-
-#contenu a:hover{/*coloration du bouton lorsque la souris passe dessus*/
+/*contenu sur la carte de vsite*/
+#contenu{
+  background-image: url("../images/image-carte-visite.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+#contenu a:hover{
+  /*coloration du bouton lorsque la souris passe dessus*/
   color: green;
 }
-
+.top{/*class pour l'image*/
+  height:auto;
+  width:25%;
+}
 /*fin de la carte de visite*/
 
 /* STYLES SPECIFIC TO FOOTER  */
@@ -158,33 +400,32 @@ border-radius: 20px;
 color:#e74c3c;
 display: inline;/* mettre les icones en lignes horizontal soit inline-block*/
 justify-content: center;
-padding: 20px;/* écart les element et 0 les resser*/
+padding: 20px;
+/* écart les element et 0 les resser*/
 }
 
-footer{
-  width:100%;
-  height: auto; /* la taille du footer :2.5rem;*/
-  color: white;
+.footer{
+  margin-top: 20px;
+  flex-shrink: 0;
+  height: 170px;/*soit 50px trop petit;*/
 }
 
 footer a:hover{
-  color: #e74c3c; /*modification de la couleur des icones au survol de la souris en  pointant(hover)*/
+  color: #e74c3c;
+  /*modification de la couleur des icones au survol de la souris en  pointant(hover)*/
 }
 
 
 footer a{
   color:white;
-  font-size: 19px; /*taille de la police de caractères*/
-}
-
-.footer{
-  flex-shrink: 0;
-  height: 170px;
+  font-size: 19px;
+  /*taille de la police de caractères*/
 }
 
 footer{
 display: flex;
-text-align: center;/*pour center les elements dans le footer*/
+text-align: center;
+/*pour center les elements dans le footer*/
 bottom-top: 0;
 }
 
@@ -192,6 +433,15 @@ bottom-top: 0;
   font-size: 15px;
   color: white;
   margin: 0;
+}
+.page{
+  flex: auto;
+}
+.cont_footer{
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  width:100%;
 }
 /*fin du footer*/
 
@@ -201,65 +451,7 @@ bottom-top: 0;
 }
 
 
-  /*background-color: #2196F3; font-size: 19px;
-  padding: 10px; background-color: rgba(255, 255, 255, 0.8);*/
-
-/*header de la page pro*/
-
-
-
-
-
-/*formulaire de contact* ne fonctionne pas (css) /
-
-/* Style du form - display items horizontally */
-/*.text-center border border-light p-5{
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}*/
-
-/* ajouter des marges pour chaque  label */
-/*.form label {
-  margin: 5px 10px 5px 0;
-}*/
-
-/* Style the input fields */
-
-/*.custom-control custom-checkbox mb-4{
-  margin: 5px 10px 5px 0;
-  padding :10Px;
-  background-color: #fff;
-  border-radius: 1px solid #ddd;
-}*/
-/* Style du boutton envoi*/
-/*.btn btn-info btn-block{
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
-  color: white;
-}
-
-/*.btn btn-info btn-block:hover {
-  background-color: royalblue;
-}
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
-/*@media (max-width: 500px) {
-  .form input {
-    margin: 10px 0;
-  }*/
-
-  /*.text-center border border-light p-5{*/
-  /*  flex-direction: column;
-    align-items: stretch;
-  }
-}*/
-
-
-
 /*formulaire*/
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
 
 .form-inline {
   display: flex;
@@ -290,11 +482,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: royalblue;
 }
 
-@media (max-width: 500px) {
-  .form-inline input {
-    margin: 10px 0;
-  }
-
     .form-inline {
       flex-direction: column;
       align-items: stretch;
@@ -302,16 +489,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /*fin du formulaire*/
 
 /*création de blocs* les blocs ne fonctionnent pas ?*/
-.section {
+/*.section {
 /*nom de la balise pour contenir le bloc, conteneur*/
-  width: 350px; /* laisser 350 sinon la boderure part(4 blocs 100:4= 25px en lageur)*/
-  font-size: 19px;
+  /*width: 350px; /* laisser 350 sinon la boderure part(4 blocs 100:4= 25px en lageur)*/
+  /*font-size: 19px;
   font-family: inherit, sans-serif, Arial;
   margin: 50px;/*marges à extérieure de 50px pour l'espacement*/
-  border: 1px solid black;
+  /*border: 1px solid black;
   text-align: justify;
-  padding: 12px; /*marge intérieur de 12px*/
-}
+  padding: 12px;*/ /*marge intérieur de 12px*/
+/*}*/
 
 .info{ /*la photo a bougé*/
   position: absolute;
@@ -322,3 +509,190 @@ body {font-family: Arial, Helvetica, sans-serif;}
 {
 margin-left: 170px;
 border:1px solid blue;
+}
+
+/*debut FAQ* ne fonctionne pas ?/
+/* Espacement entre les questions */
+.faq-section{
+        margin: 40px 0;
+}
+
+/* Masquer les checkbox et les paragraphes */
+.faq-section input,
+.faq-section p{
+        display: none;
+}
+
+/* Montrer uniquement les débuts de réponses */
+.faq-section label+p{
+        display: block;
+        color: #999;
+        font-size: .85em;
+        transition: all .15s ease-out;
+        /* Couper le texte */
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
+
+/* Si le checkbox est coché, montrer tous les paragraphes */
+.faq-section input[type=checkbox]:checked~p{
+        display: block;
+        color: #444;
+        font-size: 1em;
+        /* Restaurer le texte entier */
+        text-overflow: clip;
+        white-space: normal;
+        overflow: visible;
+}
+
+/* Style des label */
+.faq-section label{
+        font-size: 1.2em;
+        cursor: pointer;
+        background: #eee;
+        display: block;
+        position: relative;
+        padding: 7px 10px;
+        font-weight: bold;
+        border: 1px solid #ddd;
+        border-left: 3px solid #888;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        transition: all .15s ease-out;
+}
+
+/* Éviter de sélectionner le texte en cliquant plusieurs fois */
+.faq-section label::selection{
+        background: none;
+}
+
+.faq-section label:hover{
+        background: #f5f5f5;
+}
+
+/* Style du label si le checkbox est coché */
+.faq-section input[type=checkbox]:checked~label{
+        border-color: #ff7f50;
+        background: #f5deb4;
+        background-image: linear-gradient(to bottom, #fff, #f5deb4);
+        box-shadow: 0 0 1px rgba(0,0,0,.4);
+}
+
+/* Flèche du label par défaut */
+.faq-section label::before{
+        content: '';
+        position: absolute;
+        right: 4px;
+        top: 50%;
+        margin-top: -6px;
+        border: 6px solid transparent;
+        border-left-color: inherit;
+}
+
+/* Flèche du label sélectionné */
+.faq-section input[type=checkbox]:checked~label::before{
+        border: 6px solid transparent;
+        border-top-color: inherit;
+        margin-top: -3px;
+        right: 10px;
+}
+/*fin faq ne fonctionne pas ?*/
+
+/*style du FAQ ne fonctionne pas */
+        .faq-section label,
+        .faq-section label:hover{
+                cursor: default;
+                background: #eee;
+        }
+        body .faq-section p{ /* Augmente la spécificité */
+                display: block;
+                color: #444;
+                font-size: 1em;
+                text-overflow: clip;
+                white-space: normal;
+                overflow: visible;
+        }
+/*fin du style FAQ*/
+
+/*debut page actualité*/
+article{
+  display: block;
+  margin-bottom: 1em;
+  text-align:center;
+  font-family: georgia;
+  font-size: 19px;
+
+}
+
+aside{
+  display: block;
+  text-align: center;
+  font-family: georgia;
+  font-size: 19px;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+/*formulaire de connexion*/
+form{
+  display: block;
+  margin-top: 5em;/*dispose le formulaire vers le bas,sinon plus haut mettre vers l'entête(1em)*/
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: inherit;
+  padding-left:90px;
+  padding-right: 90px;
+  position: relative;
+  height: 200px;
+  boder:4px solid #ddd;
+}
+.clean-field{
+  font-size: 100%;
+  font-weight: bold;
+  font-style:inherit;
+  text-align: center;
+}
+.clean-form-botton{
+  text-align: center;
+}
+/*fin du formulaire de connexion*/
+/*menu de navigation, menu hamburger ne fonctionne pas*/
+.burger{
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.burger span{/*les balises span sont des balises line et ne conprennent pas la hauteur(height)*/
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  display: block;
+  position: absolute;/*position de la div*/
+  top: 50%;/*deplacer l'élèment de moitié vers le haut*/
+  transform: translateY(-50%);/* (position vers le milieu)pour déplacer la balise span vers le haut, il faut mettre une valeur négative*/
+  transition: background-color 0.5 ease-in-out;
+}
+.burger span::before, .burger span::after{
+content: '';/* balise vide*/
+position: absolute;
+width: 100%;
+height: 4px;
+background-color: white;
+transition: transform 0.5s ease-in-out;
+}
+.burger span::before{
+  transform: translateY(-10px);
+}
+.burger span::after{
+  transform: translateY(10px);/*translatey: déplacer la valeur vers le bas*/
+}
+.burger.active span{
+  background-color: transparent;
+}
+.burger.active span::before{
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burger.active span::after{
+  transform: translateY(0px)rotateZ(-45deg);
+}

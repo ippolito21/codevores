@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <title>devoir du 18/03</title>
   <link rel="stylesheet" href="css/codevores.css">
   <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
-  <!--insertion de boostrap4-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
-
+  <script src="codevores.js"></script>
+  <!--le script js peut être placer dans body ou dans le head-->
 </head>
 <body>
 
   <div class="header">
     <h1>Développeuse full-stack</h1>
-
+    <!--crèer une icône de menu navbar-->
+    <!--utiliser du css et javaScript pour changer l'icone du menu en icône annuler si on clique dessus-->
+    <!--création du menu navigation, menu hamburger-->
+    <div class="burger">
+    <!---crée les 3 petits barres on utilise la balise (span) balise span c'est la barre du milieu-->
+    <span></span>
+    </div>
+    <!--fin du menu navigation-->
+    <!--fin partie du menu icône-->
     <img class="image-matrix" src="images/matris3.jpg" alt="programme info">
   </div>
 
@@ -35,10 +36,12 @@
         <li><a href="FAQ.html">FAQ</a></li>
         <li><a href="Page-inscription.html">Page d'inscription</a></li>
         <li><a href="menu-de-navigation.html">Menu de navigation</a></li>
+        <li><a href="page-de-connection.html">connection</a></li>
       </ul>
-    </nav><br/>
+      </div>
+      </nav>
     <div><!--les deux contenaires sont du boostrap-->
-      <div class="container p-3 my-3 bg-dark text-white">
+      <div class="description_codevore"><!--container-->
         <h2>Plus de 356  peronnes recommandent Codevores.co<i class="fas fa-trophy"></i></h2>
         <p class="choix"><span>Ce site répond à toutes vos questions.</span></p>
         <p>C'est un secret pour aucune start-up, trouver de bons développeurs actuellement, c’est une galère sans nom. Il faut dire qu’avec la recrudescence d’entrepreneurs ne possédant aucun bagage technique, il s’agit d’une compétence cruciale pour cette horde de personnes persuadées de tenir la « next billion dollars company »</p>
@@ -46,7 +49,7 @@
         <br/>
       </div>
 
-            <div class="container p-3 my-3 border">
+            <div class="affichage"><!--container-->
             <h2>Codevores propose de nombreuses avantages</h2>
 
             <div class="photos collaboration">
@@ -71,21 +74,20 @@
           </div>
 
       <!-- FOOTER START -->
-      <ul> <!--ul insere puces ne pas enlever sinon le footer part-->
-      <footer class="footer"> <!--ne pas enlever div class sinon le footer part-->
-        <div class="container">
-        <h3 class="contact">Nous contacter</h3>
-          <p class="adresse">52 avenue du chene</p>
-          <p class="adresse">75020 paris</p><br/>
-          <div class="social">
+      <footer class="footer">
+        <!--ne pas enlever div class sinon le footer part-->
+        <div class="cont_footer"><!--container-->
+            <h3 class="contact">Nous contacter</h3>
+            <p class="adresse">52 avenue du chene</p>
+            <p class="adresse">75020 paris</p>
+            <div class="social">
           <i class="fas fa-phone-square-alt"></i>
         </div>
           <div class="social">
           <a href="mailto:contact@codevores.com" target="_blank"><strong>contact@codevores.com</strong><i class="fas fa-at"></i></a>
             <!--<a class="start"href="mailto:contact@codevores.com"><strong>contact@codevores.com</strong></small></p>-->
             <!--augmenter la police avec font-seize, avec start--><!--logos mail-->
-          </div><br/>
-
+          </div>
             <div class="social"><!--fin du footer, des logos augmenter la taille des logos-->
             <a href="http://twitter.fr"target="_blank"><i class="fab fa-twitter"></i> <!-- logos twiter ajout de lien l'attribut target blank permet d'ouvrir un nouvel onglet-->
             </div>
@@ -93,10 +95,9 @@
               <a href="http://linkedin-in"target="_blank"><i class="fab fa-linkedin-in"></i><!--logos linkedin-->
               </div>
               <div class="social">
-
                 <a href="http://facebook.fr" target="_blank"><i class="fab fa-facebook-square i-social none-hover argile"></i>
                 </div>
-              </ul><!--conserver le ul sinon le footer part-->
+              </div>
 
             <!-- END OF FOOTER -->
           </footer>

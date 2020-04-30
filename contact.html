@@ -8,16 +8,45 @@
   <body>
 
 
-    <form class="form-inline" action="">
-      <p class="h4 mb-4">Nous connecter</p>
-      <label for="nom">Nom :</label>
-      <input type="nom" id="nom" placeholder="entrer nom" name="nom">
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Entrer email" name="email">
+
+
+
       <!--label for="pwd">Mot de passe:</label-->
       <!--input type="mot de passe" id="pwd" placeholder="Entrer mot de passe" name="pswd"-->
 
       <!-- Subject -->
+
+      <form class="clean" method="post" action="#"/><!--voir si je remets-->
+      <!--form class="form-inline" action=""-->
+        <p class="h4 mb-4">Nous connecter</p>
+      <fieldset><!--voir ce que cela veut dire-->
+        <!--label for="nom">Nom:</label-->
+        <td>
+        <input type="nom" id="nom" placeholder="entrer nom" name="nom">
+      </td>
+    <!--/div-->
+        <td>
+          <!--div class="clean-field"-->
+        <input type="email" id="email" placeholder="Entrer email" name="email">
+      </td><br/><br/>
+      <!--/div><br/-->
+        <!--div class="clean-field"-->
+      <td>
+        <input type="password" placeholder="Mot de passe"><!--champ à saisie de mot de passe-->
+      </td><br/><br/>
+      <!--/div><br/>
+          <div class="clean-field"-->
+          <td>
+            <input type="Identifiant" placeholder="Identifiant"><!--champ à saisie de mot de passe-->
+          </td><br/><br/>
+        <!--/div><br/-->
+        <!--div class="clean-field">
+          <td>
+            <input type="password" placeholder="Mot de passe"><!--champ à saisie de mot de passe-->
+          <!--/td>
+        </div-->
+
+
       <label>Matière</label>
       <select class="browser-default custom-select mb-4">
         <option value="" disabled></option>
@@ -25,14 +54,15 @@
         <option value="2">Commercial</option>
         <option value="3">Technique</option>
         <option value="3">Réclamation</option>
-      </select>
+      </select><br/></br>
+
       <!-- Copy -->
           <div class="custom-control custom-checkbox mb-4">
           <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
           <label class="custom-control-label" for="defaultContactFormCopy">Envoiez-moi une copie de ce message</label>
       </div>
 
-      <div class="">
+      <div class="balle">
         <p><label for="com">Un commentaire ?</label></p>
         <textarea id="com" name="name" rows="6" cols="30"></textarea>
       </div>
@@ -42,84 +72,3 @@
     <!-- fin du formulaire de contact -->
   </body>
   </html>
-
-    <!-- formulaire de contact par défaut -->
-
-
-  <!--form class="text-center border border-light p-5" action="#!"-->
-
-        <!--p class="h4 mb-4">Nous connecter</p-->
-
-        <!--Name-->
-        <!--input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nom"-->
-
-        <!--Email -->
-        <!--input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Email"-->
-
-          <!--Subject -->
-          <!--label>Matière</label-->
-          <!--select class="browser-default custom-select mb-4">
-            <option value="" disabled></option>
-            <option value="1">Choisissez une option</option>
-            <option value="2">Commercial</option>
-            <option value="3">Technique</option>
-            <option value="3">Réclamation</option>
-        </select-->
-        <!--div-->
-        <!-- Message -->
-        <!--div class="form-group"-->
-            <!--textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-        </div-->
-
-        <!-- Copy -->
-      <!--  <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-            <label class="custom-control-label" for="defaultContactFormCopy">Envoiez-moi une copie de ce message</label>
-        </div>-->
-
-        <!-- Send button, envoyer un boutton -->
-        <!--button class="btn btn-info btn-block" type="submit">Envoyer</button-->
-
-      <!--/form-->
-      <!-- fin du formulaire de contact -->
-    <!--/body-->
-    <!--/html-->
-
-
-
-
-<!--2 eme méthode pour faire un formulaire-->
-<!--form class="" action="index.html" method="post">
-<p>Se connecter</p>
-  <p>
-  <label for="nom">Nom :</label>
-  <input type="text" value="" />
-  </p>
-
-  <p>
-  <label for="prenom">Prenom :</label>
-  <input type="text" id="prenom" name="prenom" value="">
-  </p>
-  <p>
-    <label for="">Tél :</label>
-    <input type="tel" name="tel" value="">
-  </p>
-  <p>
-    <label for="">E-mail :</label>
-    <input type="email" name="email" value="">
-  </p>
-  <p>
-    <label for="">Se connecter :</label>
-    <input type="se connecter" name="se connecter" value="">
-  </p>
-
-  <div class="">
-    <p><label for="com">Un commentaire ?</label></p>
-    <textarea id="com" name="name" rows="6" cols="30"></textarea>
-  </div>
-  <p>
-  <input type="submit" name="envoyer" value="envoyer">
-</p> fin du formulaire-->
-<!--/form>
-  </body>
-</html>

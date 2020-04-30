@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/codevores.css">
   <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
 
+
 </head>
 <body>
     <nav>
@@ -20,92 +21,114 @@
         <li><a href="FAQ.html">FAQ</a></li>
         <li><a href="Page-inscription.html">inscription</a></li>
         <li><a href="menu-de-navigation.html">Menu de navigation</a></li>
+        <li><a href="page-de-connection.html">Connection</a></li>
         </ul>
-        </div>
-        </nav>
+      </nav>
+    </div>
         <!--target designe la page de destination,ouvrir dans une page vide-->
         <!-- voir si ajoute du menu navigation-->
 
   <!--div correspond au squelette-->
-    <div class="fige">
-      <div class="photo">
-      <img src="images/image-visage-femme1.jpg" alt="Photo de Jackelin Fleurs"/>
-      <div class="plus">
-      <p><strong>Jackeline Fleurs</strong></p><br/>
-      <p>Mail: jackelinef2@gmail.com</p>
-      <p>tél: 06 34 56 45 67</p>
-      <p><strong>Freelance développeuse web Fullstack, spécialisée Wordpress</strong></p>
-      <p>Bordeaux, France</p><br/><!--mettre une icone-->
-    </div>
-      </div><!--voir si fermer la div ou plus bas-->
-      <!--div class="info"-->
-        <!--p><strong>Jackeline Fleurs</strong></p><br/-->
-        <!--p>Mail: jackelinef2@gmail.com</p-->
-        <!--p>tél: 06 34 56 45 67</p-->
-        <!--p><strong>Freelance développeuse web Fullstack, spécialisée Wordpress</strong></p-->
-        <!--p>Bordeaux, France</p><br/><!--mettre une icone-->
-      <!--/div-->
-      <!--/div s'il faut rajouter la div ou la retirer-->
-    </div>
-    <div class="section"><!--encadrer le texte-->
-      <h2>Compétences</h2>
-      <div class="sec-G">
-        <p>Recherche des missons en HTML5, CSS, Javascript,Développement Front-end, Node js, Jquery, Booststrap, MySQl, Wordpress, PHP.</p>
-      </div>
-      <div class="sec-D">
-      </div>
-    </div>
-    <div class="section">
-      <h2>Expériences</h2>
-      <div class="sec-G">
-      <p>Site de la fonction public, <em>samu, smur samu.gouv.fr</em>. Secteur spécialisé dans le soin médical, création de contenus d'applications et les actualités.</p>
-      <p>Création du <em>sitejuliesry.com</em> : vente d'applications des jeux vidéos.</p>
-      <p>Agence immoblière nicoise; <em>immofio.com</em> : réalisation de sites complets en collaboration avec un webdesigner essentiellement sur Wordpress.</p>
-      </div>
-      <div class="sec-D">
-        </div>
-      </div>
-      <div class="section">
-        <h2>Réalisations</h2>
-        <div class="sec-G">
-      <ul>
-        <li>Créatrice de sites web à mon compte</li>
-        <li>Sites Vitrines</li>
-        <li>Site e-commerce avec Foodcommerce</li>
-        <li>Blog</li>
-        <li>Référencement Naturel (SEO)</li>
-        <li>Thèmes, plugins et applications plus spécifiques</li>
-        <li>Maquette wendesigner</li>
-        </ul>
-      </div>
-      <div class="sec-D">
-      </div>
-    </div>
-    <div class="section">
-      <h2>Descriptions</h2>
-      <div class="sec-G"><!--div class ajouter-->
-      <p>Passionnée par la programmation informatique et notamment le web, j'ai commencé à étudier en autodidacte dans ce domaine il y a ans.</p>
-      <p>De plus j'ai suivi une formation de dévelopeuse web ce qui m'a permis de solider mes acquis. J'ai travaillé 4 ans en agence en tant que développeuse Fullstack.</p>
-      <p>Je connais très bien Wordpress sur lequel, j'ai fait des thèmes et plugins pour des applications plus spécifiques pour cela j'utilise (node.js et react).</p>
-      <p>J'ai l'avantage de travailler en collaboration avec un webdesigner. Cela me permet de répondre à des demandes complèes, de la création des maquetes à la livraison  du site clés en main.</p>
-      <p>Mon objectif est avant tout, la satisfaction des clients !</p>
-      <p>Vous pouvez visiter mon site pour voir les différents projets réalisés.</p>
-      <p>Pour plus d'informations n'hésitez pas à me contacter, je suis super sympa !</p>
-      </div>
-      <div class="sec-D">
-      </div>
-    </div>
-    <div class="">
-      <div class="sec-G">
-      </div>
-      <div class="sec-D">
-      </div>
+  <!--entête du doc le header peut être remplacer par la balise section-->
+
+  <!--photo à règler en fonction du menu de navigation-->
+    <section id="mission"><!--images en entêtes doivent-être collés entre elles a l'horizontal-->
+      <img  class="travail" src="images/femme-travail2.jpg" alt="la femme au travail"style=max-width:"100%" height="400px";>
+        <img  class="working" src="images/equipe.jpg" alt="homme au travail"style=max-width:"100%" height="400px";>
+    </section>
+
+    <!--contenaire du bloc de la carte visite ne s'affiche pas sur la carte de visite-->
+
+    <div class="container">
+      <h2>Carte de visite</h2>
+      <div id="contenu">
+        <h3>Développeuse Fullstack</h3>
+        <img class="top" src="images/portrait-visage3.jpg" alt="Photo de Jackelin Fleurs">
+        <h3>Toutes les infos ici</h3>
+        <a href="http://contactez-moi.fr"target="_blank" class="contact_button">Contactez-moi</a>
+        <p><strong>Jackeline Fleurs</strong></p>
+        <p>Mail: <a href="jackelinef2@gmail.com">jackeline.f2@gmail.com</a></p>
+        <p>tél: 06 34 56 45 67</p>
+        <p>Bordeaux, France</p><br/>
+        <div class="logo"><i class="far fa-address-book"></i></div><!--mettre une icone-->
     </div>
   </div>
-  <footer>
-    <div class="social"><!--ici icone twitter-->
-    <a href="http://twitter.fr target="_blank><i class="fab fa-twitter-squae fa-2x"></i></a>
+
+    <!-- fin du container-->
+
+        <div class="game"><!--sa class=affichage-->
+          <h2>Description</h2></br>
+          <p>Passionnée par la programmation informatique et notamment le web, j'ai commencé à étudier en autodidacte dans ce domaine il y a ans.De plus j'ai suivi une formation de dévelopeuse web ce qui m'a permis de solider mes acquis. J'ai travaillé 4 ans en agence en tant que développeuse Fullstack. Je connais très bien Wordpress sur lequel, j'ai fait des thèmes et plugins pour des applications plus spécifiques pour cela j'utilise (node.js et react).</p>
+          <p>Mon objectif est avant tout, la satisfaction des clients ! Vous pouvez visiter mon site pour voir les différents projets réalisésPour plus d'informations n'hésitez pas à me contacter, je suis super sympa !</p>
         </div>
-  </footer>
-</body>
-</html>
+
+        <table class="contact"><!--ne pas enlever sinon la 1er partie du tableau part-->
+          <caption><strong>Freelance développeuse web Fullstack, spécialisée Wordpress</strong></caption>
+        <thead><!--entête du tableau-->
+          <tr>
+            <th>Compétences</th>
+            <th>Expériences</th>
+            <th>Réalisations</th>
+          </tr>
+        </thead>
+        <tbody><!--corps du tableaau-->
+          <tr>
+            <td>compétences Recherche des missons en HTML5, CSS, Javascript, Développement Front-end, Node js, Jquery, Booststrap, MySQl, Wordpress, PHP.</td>
+            <td>Création du <em>site juliesry.com</em>: vente d'applications des jeux vidéos. Agence immobilière <em>immofio.com</em> : réalisation de sites complets en collaboration avec un webdesigner essentiellement sur Wordpress.</td>
+            <td>Créatrice de sites web à mon compte, Sites VitrinesSite e-commerce avec Foodcommerce, Blog, Référencement Naturel (SEO), plugins et applications plus spécifiques, Maquette wendesigner</td>
+          </tr>
+        <!--/tbody-->
+          <!--/table-->
+
+<!--bloc galeries d'images-->
+
+<!--table class="fan" width="100%" border="0" cellspacing="0" cellpading="0"-->
+  <!--tbody--><!--div class=tran-->
+  <div class=jouer><!--mettre du text sous une image-->
+  <h2>La community Codevores, c'est nous et vous...</h2>
+      <div class="row">
+        <div class="column">
+      <img src="images/carlos-images 2.jpg" alt="travaille en collaboration" style="width:100%"><h3>webdesigner</h3>
+    </div>
+    <div class="column">
+      <img src="images/jean1.jpg" alt="jean" style="width:100%"><h3>La collaboration</h3>
+    </div>
+    <div class="column">
+    <img src="images/ordinateur1.jpg" alt="technique du code" style="width:100%"><h3>Le numérique</h3>
+    </div>
+  </div>
+  </tbody>
+    </table>
+
+  <!--fin du bloc galerie d'images-->
+
+      <!-- FOOTER START -->
+      <footer class="footer">
+        <!--ne pas enlever div class sinon le footer part-->
+        <div class="cont_footer"><!--container-->
+            <h3 class="contact">Nous contacter</h3>
+            <p class="adresse">52 avenue du chene</p>
+            <p class="adresse">75020 paris</p>
+            <div class="social">
+          <i class="fas fa-phone-square-alt"></i>
+        </div>
+          <div class="social">
+          <a href="mailto:contact@codevores.com" target="_blank"><strong>contact@codevores.com</strong><i class="fas fa-at"></i></a>
+            <!--<a class="start"href="mailto:contact@codevores.com"><strong>contact@codevores.com</strong></small></p>-->
+            <!--augmenter la police avec font-seize, avec start--><!--logos mail-->
+          </div>
+            <div class="social"><!--fin du footer, des logos augmenter la taille des logos-->
+            <a href="http://twitter.fr"target="_blank"><i class="fab fa-twitter"></i> <!-- logos twiter ajout de lien l'attribut target blank permet d'ouvrir un nouvel onglet-->
+            </div>
+            <div class="social"><!--pour les icones besoin de balise.social permet d'adapter un sule style css,spécifié par trois div-->
+              <a href="http://linkedin-in"target="_blank"><i class="fab fa-linkedin-in"></i><!--logos linkedin-->
+              </div>
+              <div class="social">
+                <a href="http://facebook.fr" target="_blank"><i class="fab fa-facebook-square i-social none-hover argile"></i>
+                </div>
+              </div>
+
+            <!-- END OF FOOTER -->
+          </footer>
+          </body>
+          </html>
